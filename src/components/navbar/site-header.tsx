@@ -13,21 +13,21 @@ export function SiteHeader() {
   return (
     <header> {isMenuOpen ? 
       <section>
-        <div className="fixed top-0 z-50 flex h-[72px] w-screen flex-row items-center justify-between border-b-2 bg-background">
-          <div className="top-0 ml-2 flex h-[72px] items-center">
+        <div className="fixed top-0 z-50 flex h-[72px] w-screen flex-row items-center justify-between border-b-2 bg-background px-2">
+          <div className="top-0 flex h-[72px] items-center md:h-20 xl:h-[88px]">
             <NavTitle />
           </div>
           <div className="absolute right-2 top-5" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <XIcon className="h-8 w-8 p-[1px]"/>
           </div>
         </div>
-        <button className='relative top-20 z-40 flex h-screen justify-start bg-background' onClick={() => setIsMenuOpen(false)}>
+        <button className='relative top-20 z-40 flex h-screen justify-start bg-background xl:top-[88px]' onClick={() => setIsMenuOpen(false)}>
           <MobileNavLinks items={siteConfig.mainNav} />
         </button>
       </section>
       :
       <section>
-        <div className="fixed top-0 z-50 flex h-[72px] w-screen flex-row items-center justify-between border-b-2 bg-background px-2 md:h-[84px] xl:h-[96px] xl:px-8">
+        <div className="fixed top-0 z-50 flex h-[72px] w-screen flex-row items-center justify-between border-b-2 bg-background px-2 md:h-20 md:px-4 lg:px-6 xl:h-[88px] 2xl:px-8">
           <NavTitle/>
           <div className="hidden flex-row items-center justify-center xs:flex">
             <NavLinks items={siteConfig.mainNav} />

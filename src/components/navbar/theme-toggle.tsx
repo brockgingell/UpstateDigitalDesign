@@ -14,8 +14,8 @@ export function ThemeToggle() {
       variant='ghost'
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
     >
-      <Sun className='h-[28px] w-[28px] stroke-[2.2px] dark:hidden md:stroke-[2.7px]' />
-      <Moon className='hidden h-[28px] w-[28px] stroke-2 dark:flex md:stroke-[2.4px]' />
+      <Sun className='h-[28px] w-[28px] stroke-[2.5px] dark:hidden' />
+      <Moon className='hidden h-[28px] w-[28px] stroke-2 dark:flex md:stroke-[2.2px]' />
       <span className='sr-only'>Toggle theme</span>
     </Button>
   )
