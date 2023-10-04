@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site"
 
 export default function NavButtons() {
   return (
-      <section className="flex items-center gap-1 lg:ml-1 lg:gap-4 ">
+      <section className="flex flex-row items-center justify-center gap-1 lg:ml-1 lg:gap-4 ">
         <Link href={siteConfig.links.instagram} target="_blank" rel="noreferrer">
           <Icons.instagram className='hidden h-9 w-9 stroke-2 p-1 xs:flex lg:p-[2px]'/>
           <span className="sr-only">Instagram</span>

@@ -19,7 +19,7 @@ export default function Hero() {
               Modern Web Solutions That Boost Visibility and Drive Growth. Headache-free Web Solutions With 24/7 Support.
             </h2>
             <motion.div whileHover={{ scale: 1.1, transition: { duration: 1 }}} whileTap={{ scale: 0.8, transition: { duration: 1 } }} >
-              <Link href={siteConfig.mainNav[2].href} className={`sm:hidden ${buttonVariants({variant: 'default'})}`}>
+              <Link href={siteConfig.mainNav[2].href} className={`sm:hidden ${buttonVariants({variant: 'thirdary'})}`}>
                 Book a Free Consultation →
               </Link>
             </motion.div>
@@ -31,9 +31,9 @@ export default function Hero() {
           </div>
           <ResponsiveDevices className='flex h-auto w-[265px] pb-8 mobile:w-[300px] mobilemd:w-[360px] mobilelg:my-1 mobilelg:w-[415px] tablet:w-[515px] sm:ml-4 sm:w-[450px] lg:w-[600px] lg:pl-6 xl:w-[700px] 2xl:w-[770px]'/>
         </div>
-        <div className='hidden flex-row gap-6 sm:flex'>
+        <div className='hidden w-full flex-row justify-evenly sm:flex'>
           <motion.div whileHover={{ scale: 1.1, transition: { duration: 1 }}} whileTap={{ scale: 0.8, transition: { duration: 1 } }} >
-            <Link href={siteConfig.mainNav[2].href} className={` ${buttonVariants({variant: 'default'})}`}>
+            <Link href={siteConfig.mainNav[2].href} className={` ${buttonVariants({variant: 'thirdary'})}`}>
               Book a Free Consultation →
             </Link>
           </motion.div>

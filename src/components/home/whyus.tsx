@@ -121,7 +121,7 @@ function Feature({
       <div
         className={cn(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
+          isActive ? 'bg-thirdary dark:bg-secondary' : 'bg-slate-500',
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -131,7 +131,7 @@ function Feature({
       <h3
         className={cn(
           'mt-6 text-lg font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-thirdary' : 'text-slate-600',
         )}
       >
         {feature.name}
@@ -145,11 +145,11 @@ function Feature({
 
 function FeaturesMobile() {
   return (
-    <div className="container flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 md:hidden">
+    <div className="container mt-10 flex flex-col gap-y-5 overflow-hidden md:hidden">
       {features.map((feature) => (
         <div key={feature.summary}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          <div className="relative mt-10 pb-10">
+          <div className="relative mt-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-card sm:-inset-x-6" />
             <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-background shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
               <Image
@@ -168,7 +168,7 @@ function FeaturesMobile() {
 
 function FeaturesDesktop() {
   return (
-    <Tab.Group as="div" className="hidden md:container md:mt-20 md:block">
+    <Tab.Group as="div" className="hidden md:container md:mt-10 md:block">
       {({ selectedIndex }) => (
         <>
           <Tab.List className="grid grid-cols-3 gap-x-8">
@@ -223,11 +223,11 @@ function FeaturesDesktop() {
 
 export function WhyUs() {
   return (
-    <section className='container relative flex flex-col items-center justify-around p-2 py-24' aria-label="Ways we can simplify the web for your business">
+    <section className='container relative flex flex-col items-center justify-around p-2 ' aria-label="Ways we can simplify the web for your business">
       <h1 className='max-w-2xl text-3xl font-bold tablet:text-4xl xl:text-5xl'>
         Why Does Your Business Need a Website?
       </h1>
-      <h2 className='mt-4 max-w-2xl text-lg tablet:font-medium xl:my-6 xl:max-w-3xl'>
+      <h2 className='my-4 max-w-2xl text-lg tablet:font-medium xl:my-6 xl:max-w-3xl'>
         In today’s digital age, a professional website isn’t just a fancy addition—it&apos;s essential. It tells your story, brings credibility, and serves as the digital face of your brand. But we get it—designing, building, and maintaining a site can be overwhelming.
       </h2>
       <FeaturesMobile />
