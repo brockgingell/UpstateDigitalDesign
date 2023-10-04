@@ -145,7 +145,7 @@ function Feature({
 
 function FeaturesMobile() {
   return (
-    <div className="container mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 md:hidden">
+    <div className="container flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 md:hidden">
       {features.map((feature) => (
         <div key={feature.summary}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />

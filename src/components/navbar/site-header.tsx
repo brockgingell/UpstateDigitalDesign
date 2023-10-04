@@ -27,7 +27,7 @@ export function SiteHeader() {
       </section>
       :
       <section>
-        <div className="realtive sticky top-0 flex h-[72px] w-screen flex-row items-center justify-between border-b-2 bg-background px-2 md:h-20 md:px-4 lg:px-6 xl:h-[88px] 2xl:px-8">
+        <div className="sticky top-0 flex h-[72px] w-screen flex-row items-center justify-between border-b-2 bg-background px-2 md:h-20 md:px-4 lg:px-6 xl:h-[88px] 2xl:px-8">
           <NavTitle/>
           <div className="hidden flex-row items-center justify-center xs:flex">
             <NavLinks items={siteConfig.mainNav} />
