@@ -9,7 +9,7 @@ import ResponsiveDevices from 'public/newhero.svg'
 
 export default function Hero() {
   return (
-    <section className='relative flex h-[calc(100vh-72px)] flex-col items-center justify-around p-3 2xl:px-12'>
+    <section className='relative flex h-[calc(100vh-72px)] flex-col items-center justify-around p-3 ring-2 2xl:px-12'>
       <div className='flex flex-col items-center gap-2 sm:flex-row sm:items-start sm:justify-around xl:justify-center'>
         <div className='flex flex-col mobilemd:gap-2 tablet:gap-3 sm:w-1/2 sm:self-center'>
           <h1 className='text-left text-3xl font-bold tablet:text-4xl xl:text-5xl '>
