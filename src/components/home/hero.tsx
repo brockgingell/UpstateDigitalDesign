@@ -9,7 +9,7 @@ import ResponsiveDevices from 'public/devices.svg'
 
 export default function Hero() {
   return (
-      <section className='container flex h-screen w-full flex-col items-center gap-1 p-2 py-[60px]'>
+      <section className='container flex h-screen w-full flex-col items-center gap-1 p-2 pb-[60px] sm:py-[60px]'>
         <div className='flex flex-col items-center sm:flex-row'>
           <div className='flex flex-col items-center sm:w-1/2'>
             <h1 className='text-left text-3xl font-bold tablet:text-4xl xl:text-5xl '>
