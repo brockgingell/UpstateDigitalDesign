@@ -145,7 +145,7 @@ function Feature({
 
 function FeaturesMobile() {
   return (
-    <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
+    <div className="container mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 md:hidden">
       {features.map((feature) => (
         <div key={feature.summary}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
@@ -168,7 +168,7 @@ function FeaturesMobile() {
 
 function FeaturesDesktop() {
   return (
-    <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
+    <Tab.Group as="div" className="hidden md:container md:mt-20 md:block">
       {({ selectedIndex }) => (
         <>
           <Tab.List className="grid grid-cols-3 gap-x-8">
@@ -190,7 +190,7 @@ function FeaturesDesktop() {
             ))}
           </Tab.List>
           <Tab.Panels className="rounded-4xl relative mt-20 overflow-hidden bg-background px-14 py-16 xl:px-16">
-            <div className="-mx-5 flex">
+            <div className="flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
                   static
@@ -223,11 +223,11 @@ function FeaturesDesktop() {
 
 export function WhyUs() {
   return (
-    <section className='container mx-auto max-w-2xl relative flex flex-col items-center justify-around p-2' aria-label="Ways we can simplify the web for your business">
-      <h1 className=' text-3xl font-bold tablet:text-4xl xl:text-5xl'>
+    <section className='container relative flex flex-col items-center justify-around p-2 py-24' aria-label="Ways we can simplify the web for your business">
+      <h1 className='max-w-2xl text-3xl font-bold tablet:text-4xl xl:text-5xl'>
         Why Does Your Business Need a Website?
       </h1>
-      <h2 className="mt-4 text-lg tablet:font-medium xl:my-2 xl:text-2xl">
+      <h2 className='mt-4 max-w-2xl text-lg tablet:font-medium xl:my-6 xl:max-w-3xl'>
         In today’s digital age, a professional website isn’t just a fancy addition—it&apos;s essential. It tells your story, brings credibility, and serves as the digital face of your brand. But we get it—designing, building, and maintaining a site can be overwhelming.
       </h2>
       <FeaturesMobile />

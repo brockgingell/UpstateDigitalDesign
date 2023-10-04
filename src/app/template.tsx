@@ -2,6 +2,7 @@
 import { ReactNode } from 'react';
 import { motion, AnimatePresence } from 'framer-motion'
 import { SiteHeader } from '@/components/navbar/site-header'
+import { SiteFooter } from '@/components/navbar/site-footer'
 import { HeroBG } from '@/components/ui/herobg'
 
 interface PageWrapperProps {
@@ -23,6 +24,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       >
         {children}
       </motion.div>
+      <SiteFooter />
     </AnimatePresence>
   </>
   )
