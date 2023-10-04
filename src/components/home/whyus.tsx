@@ -223,19 +223,13 @@ function FeaturesDesktop() {
 
 export function WhyUs() {
   return (
-    <section
-      id="secondary-features"
-      aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
-    >
-      <div className="container mx-auto max-w-2xl md:text-center">
-        <h2 className=' text-3xl font-bold tablet:text-4xl xl:text-5xl'>
-          Why Does Your Business Need a Website?
-        </h2>
-        <p className="mt-4 text-lg tablet:font-medium xl:my-2 xl:text-2xl">
-          In today’s digital age, a professional website isn’t just a fancy addition—it&apos;s essential. It tells your story, brings credibility, and serves as the digital face of your brand. But we get it—designing, building, and maintaining a site can be overwhelming.
-        </p>
-      </div>
+    <section className='container mx-auto max-w-2xl relative flex flex-col items-center justify-around p-2' aria-label="Ways we can simplify the web for your business">
+      <h1 className=' text-3xl font-bold tablet:text-4xl xl:text-5xl'>
+        Why Does Your Business Need a Website?
+      </h1>
+      <h2 className="mt-4 text-lg tablet:font-medium xl:my-2 xl:text-2xl">
+        In today’s digital age, a professional website isn’t just a fancy addition—it&apos;s essential. It tells your story, brings credibility, and serves as the digital face of your brand. But we get it—designing, building, and maintaining a site can be overwhelming.
+      </h2>
       <FeaturesMobile />
       <FeaturesDesktop />
     </section>

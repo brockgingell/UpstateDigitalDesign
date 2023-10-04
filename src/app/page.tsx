@@ -6,7 +6,7 @@ import OfferCapitalRegion from '@/components/home/offer-capital-region'
 
   export default function IndexPage() {
     return (
-      <main className='realtive overflow-hidden'>
+      <main className='realtive mt-8 overflow-hidden'>
         <Hero />
         <WhyUs />
         <OfferCapitalRegion />
