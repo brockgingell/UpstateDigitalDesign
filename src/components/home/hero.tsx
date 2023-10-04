@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { siteConfig } from '@/config/site'
 import { buttonVariants } from '@/components/ui/button'   
 import { motion } from 'framer-motion'
-import ResponsiveDevices from 'public/devices.svg'
+import Devices from 'public/devices.svg'
 
 export default function Hero() {
   return (
@@ -29,7 +29,7 @@ export default function Hero() {
               </Link>
             </motion.div>
           </div>
-          <ResponsiveDevices className='flex h-auto w-[265px] pb-8 mobile:w-[300px] mobilemd:w-[360px] mobilelg:my-1 mobilelg:w-[415px] tablet:w-[515px] sm:ml-4 sm:w-[450px] lg:w-[600px] lg:pl-6 xl:w-[700px] 2xl:w-[770px]'/>
+          <Devices className='flex h-auto w-[265px] pb-8 mobile:w-[300px] mobilemd:w-[360px] mobilelg:my-1 mobilelg:w-[415px] tablet:w-[515px] sm:ml-4 sm:w-[450px] lg:w-[600px] lg:pl-6 xl:w-[700px] 2xl:w-[770px]'/>
         </div>
         <div className='hidden w-full flex-row justify-evenly sm:flex'>
           <motion.div whileHover={{ scale: 1.1, transition: { duration: 1 }}} whileTap={{ scale: 0.8, transition: { duration: 1 } }} >
