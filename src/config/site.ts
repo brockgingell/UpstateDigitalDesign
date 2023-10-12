@@ -12,7 +12,7 @@ export const siteConfig = {
     },
     {
       title: "Services",
-      href: "/service",
+      href: "/services",
     },
     {
       title: "Projects",
